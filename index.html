@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Active Online Software Page</title>
+    <meta property="og:title" content="Active Online Software Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-menu">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-no9b-1500h.png"
+                class="home-logo"
+              />
+              <div class="home-links">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered">
+                <div id="menu" class="home-left">
+                  <div class="home-links1">
+                    <span class="Link">🏠 Home</span>
+                    <a href="#dataex" class="home-link Link">
+                      📝 Data Explanation
+                    </a>
+                    <a href="#dataimage" class="home-link1 Link">
+                      📊 Data Image
+                    </a>
+                    <a href="#dataviz" class="home-link2 Link">
+                      📈 Data Visualization
+                    </a>
+                  </div>
+                </div>
+                <div class="home-right">
+                  <a href="#home" class="home-link3">
+                    <div class="home-get-started">
+                      <span class="home-text04">Get started</span>
+                    </div>
+                  </a>
+                  <div id="open-mobile-menu" class="home-burger-menu">
+                    <img
+                      alt="pastedImage"
+                      src="public/pastedimage-yxbd.svg"
+                      class="home-mobile-menu-button"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <div class="home-container2">
+                <script>
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu')
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu')
+                  const openButton = document.querySelector('#open-mobile-menu')
+
+                  // On openButton click, set the mobileMenu position left to -100vw
+                  openButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(0%)'
+                  })
+
+                  // On closeButton click, set the mobileMenu position to 0vw
+                  closeButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(100%)'
+                  })
+                </script>
+              </div>
+            </div>
+          </div>
+          <header class="home-header">
+            <h1 class="home-text05">🌾 Analyze of Smart Farming Data</h1>
+            <p class="home-text06">
+              Welcome to Smart Farming Web Data Analysis
+            </p>
+            <a href="#home" class="home-link4">
+              <div class="home-get-started1">
+                <span class="home-text07">Get started</span>
+              </div>
+            </a>
+          </header>
+          <div class="home-dashboard-preview">
+            <div class="home-outline">
+              <img
+                alt="pastedImage"
+                src="public/image_home-1400w.jpg"
+                loading="lazy"
+                class="home-image"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="home-features">
+          <div class="home-title">
+            <span class="home-text08">Let's grow with our data</span>
+            <span class="home-text09">
+              This Website Give Analysis About Agricultural Condition.
+            </span>
+            <span class="home-text10">
+              <span class="home-text11">
+                The dataset contains information about the growth conditions of
+                various crops, including measurements of Nitrogen (N),
+                Phosphorus (P), and Potassium (K) levels in the soil, as well as
+                environmental factors such as temperature, humidity, pH level,
+                and rainfall. The "label" column indicates the type of crop
+                being grown. This data can be used to analyze the optimal
+                growing conditions for different crops, monitor farming
+                practices, and make informed decisions to improve crop yield and
+                quality. It provides valuable insights for farmers and
+                agricultural researchers to optimize farming techniques and
+                enhance agricultural productivity.
+              </span>
+              <br class="home-text12" />
+            </span>
+          </div>
+          <span id="home" class="home-text13">
+            The motivational points of the data include&nbsp;
+          </span>
+          <div class="home-cards">
+            <div class="home-container3">
+              <div class="card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-fii6m-200h.png"
+                  class="home-icon2"
+                />
+                <span class="home-text14">Optimize</span>
+                <span class="home-text15">
+                  1. Empowering farmers to optimize farming techniques and
+                  enhance agricultural productivity.
+                </span>
+              </div>
+              <div class="home-publish card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-mimg-200h.png"
+                  class="home-icon3"
+                />
+                <span class="home-text16">Informed</span>
+                <span class="home-text17">
+                  2. Providing valuable insights for making informed decisions
+                  to improve crop yield and quality.
+                </span>
+              </div>
+            </div>
+            <div class="home-container4">
+              <div class="card home-analyze">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-l6p-200h.png"
+                  class="home-icon4"
+                />
+                <span class="home-text18">Innovate</span>
+                <span class="home-text19">
+                  3. Enabling the agricultural community to adapt and innovate
+                  in order to achieve sustainable and efficient farming
+                  practices.
+                </span>
+              </div>
+              <div class="card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-vyi5-200h.png"
+                  class="home-icon5"
+                />
+                <span class="home-text20">Facilitating</span>
+                <span class="home-text21">
+                  4. Facilitating the integration of advanced technology and
+                  data analytics into agricultural practices, thereby
+                  modernizing the sector and making it more resilient to
+                  environmental and market challenges.
+                </span>
+              </div>
+            </div>
+          </div>
+          <span class="home-text22">
+            The challenge of the data lies in leveraging the diverse set of
+            factors and measurements to identify the optimal growth conditions
+            for different crops. This involves analyzing the complex interplay
+            between soil nutrients, environmental variables, and crop types to
+            develop effective farming strategies. Additionally, ensuring the
+            accuracy and reliability of the data is crucial for making informed
+            decisions and recommendations. The challenge also includes the need
+            to translate the data into actionable insights that can be
+            practically applied by farmers to improve crop yield and quality.
+          </span>
+          <a href="#menu" class="home-link5">
+            <div class="home-get-started2">
+              <span class="home-text23">Goto Menu</span>
+            </div>
+          </a>
+        </section>
+        <section class="home-statistics">
+          <span id="dataex" class="home-text24">📝 Data Explanation</span>
+        </section>
+        <section class="home-banners">
+          <div class="home-banner-manage">
+            <div class="home-container5">
+              <div class="home-left1">
+                <span class="home-text25 title">
+                  This data Contains information about Agricultural condition,
+                  including :
+                </span>
+                <span class="home-text26">
+                  <span class="home-text27">- Nitrogen (N)</span>
+                  <br class="home-text28" />
+                  <span class="home-text29">- Phospor (P)</span>
+                  <br class="home-text30" />
+                  <span class="home-text31">- Pottasium (K)</span>
+                  <br class="home-text32" />
+                  <span class="home-text33">- Temperature</span>
+                  <br class="home-text34" />
+                  <span class="home-text35">- Humidity</span>
+                  <br class="home-text36" />
+                  <span class="home-text37">- Potential of Hydrogen (pH)</span>
+                  <br class="home-text38" />
+                  <span class="home-text39">- Rainfall</span>
+                  <br class="home-text40" />
+                  <span class="home-text41">- Crops Label</span>
+                </span>
+                <a href="#menu" class="home-link6">
+                  <div class="home-get-started3">
+                    <span class="home-text42">Goto Menu</span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-image-container">
+                <img
+                  alt="pastedImage"
+                  src="public/data_explanation-1200w.png"
+                  class="home-cards-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-statistics1">
+          <span id="dataimage" class="home-text43">
+            📊 Data Image &amp; Desctiption
+          </span>
+        </section>
+        <section class="home-how-it-works">
+          <div class="home-centered-container">
+            <div class="home-heading">
+              <span class="home-text44 title">
+                <span>Data Description</span>
+                <br />
+                <span class="home-text47">
+                  This is Descriptive Analysis from dataset:
+                </span>
+              </span>
+            </div>
+            <img
+              src="public/data_description-600h.png"
+              alt="image"
+              class="home-image1"
+            />
+            <div class="home-row"></div>
+            <a href="#menu" class="home-link7">
+              <div class="home-get-started4">
+                <span class="home-text48">Goto Menu</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="home-statistics2">
+          <span id="dataviz" class="home-text49">📈 Data Visualization</span>
+        </section>
+        <section class="home-pricing">
+          <div class="home-centered-container1">
+            <div class="home-heading1">
+              <span class="home-text50 title">Data Visualization</span>
+              <div class="home-selection"></div>
+            </div>
+          </div>
+          <div class="home-card">
+            <img src="public/n-800w.png" alt="image" class="home-image2" />
+            <span>
+              Graphic above shows distribution Column Value'N'. Red dashed line
+              showed average value. it cann help to understand distribution data
+              and to Identify common or unusual value.
+            </span>
+          </div>
+          <div class="home-card1">
+            <img src="public/p-800w.png" alt="image" class="home-image3" />
+            <span>
+              Graphic above shows distribution Column Value'P'. Red dashed line
+              showed average value. it cann help to understand distribution data
+              and to Identify common or unusual value.
+            </span>
+          </div>
+          <div class="home-card2">
+            <img src="public/k-800w.png" alt="image" class="home-image4" />
+            <span>
+              Graphic above shows distribution Column Value'K'. Red dashed line
+              showed average value. it cann help to understand distribution data
+              and to Identify common or unusual value.
+            </span>
+          </div>
+          <div class="home-card3">
+            <div class="home-container6">
+              <img src="public/temp-500h.png" alt="image" class="home-image5" />
+            </div>
+            <span>
+              Graphic above shows distribution Column Value'temperature'. Red
+              dashed line showed average value. it cann help to understand
+              distribution data and to Identify common or unusual value.
+            </span>
+          </div>
+          <div class="home-card4">
+            <img src="public/hum-800w.png" alt="image" class="home-image6" />
+            <span>
+              Graphic above shows distribution Column Value'humidity'. Red
+              dashed line showed average value. it cann help to understand
+              distribution data and to Identify common or unusual value.
+            </span>
+          </div>
+          <div class="home-card5">
+            <img src="public/ph-500h.png" alt="image" class="home-image7" />
+            <span>
+              Graphic above shows distribution Column Value'ph'. Red dashed line
+              showed average value. it cann help to understand distribution data
+              and to Identify common or unusual value.
+            </span>
+          </div>
+          <div class="home-card6">
+            <img
+              src="public/rainfall-800w.png"
+              alt="image"
+              class="home-image8"
+            />
+            <span>
+              Graphic above shows distribution Column Value'rainfall'. Red
+              dashed line showed average value. it cann help to understand
+              distribution data and to Identify common or unusual value.
+            </span>
+          </div>
+          <a href="#menu" class="home-link8">
+            <div class="home-get-started5">
+              <span class="home-text58">Goto Menu</span>
+            </div>
+          </a>
+        </section>
+        <footer class="home-footer">
+          <div class="home-bottom">
+            <span class="home-text59">Copyright © Smart Farming- 2023</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
